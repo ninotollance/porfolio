@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+  Author : Yoshi
+  Created at : 21/09/2026
+-->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Yoshi, concepteur et développeur d'applications web spécialisé en Java. Freelance dans le Morbihan, il accompagne PME et particuliers dans leurs projets.">
+    <meta property="og:title" content="Mario, développeur Java freelance">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://mario.github.io/formation-html/">
+    <meta property="og:image" content="https://mario.github.io/formation-html/assets/img/og-mario.png">
+    <meta property="og:description" content="Concepteur et développeur d'applications web spécialisé en Java.">
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/assets/favicon/yoshi.jpg" type="image/jpeg">
+
+    <title>Développeur Java freelance . Yoshi</title>
+  </head>
+  <body id="haut">
+    <header>
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html" aria-current="page"><img src="/assets/img/yoshi.webp" alt="" width="50" height="50"></a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="soutenances.html">Soutenances</a></li>
+          <li><a href="merci.html">Merci</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Yoshi</h1>
+      <p>Ceci est la page de présentation de Yoshi.</p>
+      <img src="/assets/img/yoshi.webp" alt="Yoshi vu de face" width="240" height="240">
+      <section>
+        <h2>Me contacter</h2>
+        <address>
+          <ul>
+            <li><a href="mailto:yoshi@kart.fr">yoshi@kart.fr</a></li>
+            <li>Vannes (56)</li>
+            <li><a href="https://github.com/ninotollance" target="_blank">github</a></li>
+          </ul>
+        </address>
+      </section>
+      <section>
+        <h2>À propos</h2>
+        <p>
+          Yoshi ! Vingt ans que je parcours le royaume Champignon, une clé à molette à la main.
+          <br>J'ai fini par admettre deux choses : les tuyaux se ressemblent tous (verts, verts, encore verts, Yoshi...), et les Toads qui vous remercient en vous annonçant que la princesse est dans un autre château, ça finit par me rester en travers de la langue. Même moi, je ne peux pas avaler ça !
+        </p>
+        <p>
+         Alors j'ai fondé mon entreprise de <strong>conception et de développement d'applications</strong>, et j'ai quitté la plomberie d'un grand saut plané, sans aucun regret. Yoshi !<br>Je travaille surtout pour des structures qui n'ont pas de service informatique, et le royaume en compte des tonnes, autant que de Shy Guys dans un fort de Bowser. Yoshi yoshi yoshi !
+        </p>
+      </section>
+      <section>
+        <h2>Formation & expéreince</h2>
+        <ul>
+          <li>Kercode GRETA - <time datetime="2025">2025</time>/<time datetime="2026">2026</time></li>
+          <li>CDA GRETA - <time datetime="2026">2026</time>/<time datetime="2027">2027</time></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Objectif professionnel</h2>
+        <ul>
+          <li>Dev web ERP</li>
+          <li>Dev Ops</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Compétences</h2>
+        <h3>Langages</h3>
+        <table>
+          <caption>Niveau d'autonomie que je me reconnais, sur une échelle personnelle de 0 à 10.</caption>
+          <thead>
+              <tr>
+                <th scope="col">Langage</th>
+                <th scope="col">Niveau</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">HTML</th>
+              <td>7 / 10, je structure une page seul et je relis celle des autres</td>
+            </tr>
+            <tr>
+              <th scope="row">PHPL</th>
+              <td>6 / 10, je construit un algorythme seul et je relis ceux des autres</td>
+            </tr>
+            <tr>
+              <th scope="row">JAVA</th>
+              <td>3 / 10, je débute dans ce langage</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Outils</h3>
+        <ul>
+          <li>Github</li>
+          <li>Figma</li>
+          <li>VSCode</li>
+        </ul>
+      </section>
+      <section>
+        <h2>M'écrire</h2>
+        <p>Contacter moi remplissant le formulaire si dessous.</p>
+        <form action="merci.html" method="get">
+          <fieldset>
+            <legend>Coordonnées</legend>
+            <div>
+              <label for="nom">Votre nom*</label>
+              <input type="text" id="nom" name="nom" placeholder="Hamilton" autocomplete="family-name" required>
+              <label for="prenom">Votre prénom*</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Lewis" autocomplete="name" required>
+              <label for="email">Votre email*</label>
+              <input type="email" id="email" name="email" placeholder="Lewis@hamilton.com" autocomplete="email" required>
+              <label for="tel">Votre numéro de téléphone</label>
+              <input type="tel" id="tel" name="tel" placeholder="0123456789" autocomplete="tel">
+
+              <fieldset>
+                <legend>Êtes vous un professionnel ou particulier ?</legend>
+                <div>
+                  <input type="radio" id="professionnel" name="type_client" value="professionnel" required>
+                  <label for="professionnel">Professionnel</label>
+                  <input type="radio" id="particulier" name="type_client" value="particulier">
+                  <label for="particulier">particulier</label>
+                </div>
+              </fieldset>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Message</legend>
+            <div>
+              <label for="motif">Sujet*</label>
+              <select name="motif" id="motif">
+                <option value="stage">Demande de stage</option>
+                <option value="emploi">Offre d'emploi</option>
+                <option value="autre">Autre</option>
+              </select>
+              <label for="message">Votre message*</label>
+              <textarea name="message" id="message" minlength="10" maxlength="200" placeholder="10 caractères minimum"></textarea><br>
+              <input type="checkbox" id="copie" name="copie" value="oui">
+              <label for="copie">M'envoyer une copie de ce message</label>
+            </div>
+          </fieldset>
+          <button type="submit">Envoyer le message</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="index.html" aria-current="page"><img src="/assets/img/yoshi.webp" alt="" width="50" height="50"></a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="soutenances.html">Soutenances</a></li>
+        </ul>
+      </nav>
+      <p><a href="#haut">Retour en haut de la page</a></p>
+      <p><small>© <time datetime="2026">2026</time> Yoshi, site réalisé en HTML dans me cadre de ma formation.</small></p>
+    </footer>
+
+  </body>
+</html>

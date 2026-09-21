@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+  Author : Yoshi
+  Created at : 21/09/2026
+-->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merci à Yoshi pour son maginifique site web. Il nous a accompagné de A à Z sur notre demande de site web pour notre PME de fabricant de chips dans le Morbihan.">
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/jpeg" href="/assets/favicon/yoshi.jpg"/>
+
+    <title>Merci</title>
+  </head>
+  <body id="haut">
+    <header>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html"><img src="/assets/img/yoshi.webp" alt="" width="50" height="50"></a></li>
+        <li><a href="ressources.html">Ressources</a></li>
+        <li><a href="soutenances.html">Soutenances</a></li>
+        <li><a href="merci.html" aria-current="page">Merci</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Merci</h1>
+    <p>merci à Yoshi pour ce site.</p>
+    <img src="/assets/img/yoshi.webp" alt="Yoshi vu de face" width="240" height="240">
+    <ul id="recap"></ul>
+
+    <script>
+      const recap = document.getElementById('recap');
+
+      for (const [cle, valeur] of new URLSearchParams(window.location.search)) {
+        const item = document.createElement('li');
+        item.textContent = cle + ' : ' + valeur;
+        recap.append(item);
+      }
+    </script>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="/assets/img/yoshi.webp" alt="" width="50" height="50"></a></li>
+        <li><a href="ressources.html">Ressources</a></li>
+        <li><a href="soutenances.html">Soutenances</a></li>
+      </ul>
+    </nav>
+    <p><a href="#haut">Retour en haut de la page</a></p>
+    <p><small>© <time datetime="2026">2026</time> Yoshi, site réalisé en HTML dans me cadre de ma formation.</small></p>
+  </footer>
+  </body>
+</html>
